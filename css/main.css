@@ -1,0 +1,147 @@
+/*
+div {
+	border: 1px solid red;
+}
+*/
+
+html, body, section {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.container {
+	height: 100%;
+}
+
+.main {
+	height: 800px;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+ul, menu, dir {
+	-webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+.clear {
+	clear: both;
+	content: "";
+}
+
+/* --------------------------- */
+/*   NAVBAR CONTAINER    */
+/* --------------------------- */
+
+.navbar {
+	height: 80px;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.navbar h1 {
+	font-size: 3em;
+	line-height: 1.5em;
+	text-transform: capitalize;
+}
+
+/* --------------------------- */
+/*    HEADER CONTAINER    */
+/* --------------------------- */
+
+.header {
+	height: 440px;
+	width: 960px;
+	margin: 0 auto;
+	background-color: #3f514b;
+}
+
+
+/* --------------------------- */
+/*     COLOR SELECTED    */
+/* --------------------------- */
+
+.color-selected {
+	display: inline-block;
+	height: 22.5rem;
+	width: 35%;
+	float: left;
+	background-color: azure;
+}
+
+.color-selected ul {
+	transform: rotate(-90deg);
+	width: 18.75rem;
+	margin: 2rem auto;
+}
+
+.color-selected ul > li {
+	height: 3.375rem;
+	font-size: 1.35em;
+	text-align: center;
+	letter-spacing: .06rem;
+	line-height: 2.5rem;
+	text-transform: capitalize;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.color-selected li:last-child {
+	border-bottom: 1px solid #000;
+}
+
+.color-selected li:hover {
+	background-color: aqua;
+}
+
+.color-selected li span {
+	text-transform: uppercase;
+	font-size: .8rem;
+	display: block;
+	height: 30%;
+	color: #f07710;
+	line-height: .5em;
+}
+
+
+/* --------------------------- */
+/*     COLOR SELECTED    */
+/* --------------------------- */
+
+
+.color-choices {
+	display: inline-block;
+	height: 360px;
+	width: 65%;
+	background-color: beige;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
