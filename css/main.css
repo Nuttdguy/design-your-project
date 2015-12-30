@@ -89,7 +89,7 @@ ul, menu, dir {
 
 .color-selected ul > li {
 	height: 3.375rem;
-	font-size: 1.35em;
+	font-size: 1.35rem;
 	text-align: center;
 	letter-spacing: .06rem;
 	line-height: 2.5rem;
@@ -116,17 +116,34 @@ ul, menu, dir {
 	line-height: .5em;
 }
 
-
 /* --------------------------- */
 /*     COLOR SELECTED    */
 /* --------------------------- */
-
 
 .color-choices {
 	display: inline-block;
 	height: 360px;
 	width: 65%;
 	background-color: beige;
+}
+
+.color-choices ul {
+	padding-top: 1.15rem;
+}
+
+.color-choices li {
+	display: inline-block;
+	height: 5.25rem;
+	width: 4.5rem;
+	margin: .5rem 0 .5rem .66rem;
+	border: 1px solid #000;
+	border-radius: 4px;
+	line-height: 5.25rem;
+	text-align: center;
+}
+
+.color-choices li:hover {
+	background-color: blueviolet;
 }
 
 
