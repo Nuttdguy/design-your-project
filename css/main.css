@@ -37,7 +37,8 @@ ul, menu, dir {
 
 .clear {
 	clear: both;
-	content: "";
+	content: " ";
+	display: hidden;
 }
 
 /* --------------------------- */
@@ -146,8 +147,67 @@ ul, menu, dir {
 	background-color: blueviolet;
 }
 
+/* --------------------------- */
+/*     INPUT CONTAINER        */
+/* --------------------------- */
 
+.input-container {
+	width: inherit;
+	height: 80px;
+}
 
+/* --------------------------- */
+/*     TYPOGRAPHY INPUT      */
+/* --------------------------- */
+
+.typography {
+	display: inline-block;
+	width: 19.5rem;
+	padding-left: 1.5rem;
+}
+
+.typography h2 {
+	line-height: 2rem;
+	color: #f07710;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+}
+
+.typography input {
+	height: 24px;
+	width: 11.5rem;
+	margin-right: .5rem;
+}
+
+.typography button {
+	padding: 7px;
+	width: 100px;
+	background-color: transparent;
+	color: #f07710;
+	border: 1px solid #000;
+}
+
+.typography button:hover {
+	background-color: #50b937;
+}
+
+/* --------------------------- */
+/*     COLOR INPUT      */
+/* --------------------------- */
+
+.api {
+	display: inline-block;
+	width: 38.75rem;
+	height: 80px;
+	background-color: tomato;
+}
+
+.api {
+	display: inline-block;
+	width: 38.75rem;
+	height: 80px;
+	background-color: tomato;
+}
 
 
 
