@@ -23,6 +23,11 @@ ul, li, a {
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
+	cursor: pointer;
+}
+
+button, input  {
+	cursor: pointer;
 }
 
 ul, menu, dir {
@@ -60,10 +65,9 @@ ul, menu, dir {
 
 .header {
 	display: block;
-	height: 460px;
+	height: 480px;
 /*	background-color: #3f514b;*/
 }
-
 
 /* --------------------------- */
 /*     COLOR SELECTED    */
@@ -77,7 +81,7 @@ ul, menu, dir {
 	width: 35%;
 	margin: 0;
 	padding: 2.75rem 1rem;
-	background-color: azure;
+/*	background-color: azure;*/
 }
 
 .color-selected ul {
@@ -123,7 +127,7 @@ ul, menu, dir {
 	box-sizing: border-box;
 	height: 360px;
 	width: 65%;
-	background-color: beige;
+/*	background-color: beige;*/
 }
 
 .color-choices ul {
@@ -212,6 +216,7 @@ ul, menu, dir {
 .api-input > input {
 	width: 300px;
 	height: 28px;
+	border: 1px solid #f07710;
 }
 
 .api-input button {
@@ -226,6 +231,7 @@ ul, menu, dir {
 
 .api-input .button-reset {
 	border-color: #f40c0c;
+	color: #f40c0c;
 }
 
 /* --------------------------- */
@@ -235,16 +241,18 @@ ul, menu, dir {
 .main {
 	height: 800px;
 	width: inherit;
-	background-color: azure;
+/*	background-color: azure;*/
 	margin: 0 auto;
 }
 
+/*
 .main::before {
 	content: "";
 	display: block;
 	height: 1px;
 	border-bottom: 1px solid #69a325;
 }
+*/
 
 /* --------------------------- */
 /*    PRESENTATION SECTION      */
@@ -390,6 +398,8 @@ ul, menu, dir {
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: 12px;
+	border: 1px solid #f07710;
+	background-color: transparent;
 	padding: 6px 0px;
 	width: 30%;
 	font-size: .9rem;
@@ -431,13 +441,12 @@ ul, menu, dir {
 	box-sizing: border-box;
 	vertical-align: top;
 	padding: 8px;
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 }
 
-.mockup-header {
-	height: 30px;;
+.mockup-view > h2 {
+	height: 30px;
 	width: auto;
-	
 	margin: 1rem auto;
 	font-size: 1.75rem;
 	margin-bottom: 18px;
@@ -451,8 +460,8 @@ ul, menu, dir {
 
 .mockup-container {
 	width: 100%;
-	height: 600px;
-	border: 1px solid red;
+	height: 550px;
+/*	border: 1px solid red;*/
 }
 
 .mockup-display {
@@ -464,7 +473,43 @@ ul, menu, dir {
 	background: url(../css/img/iphone-base.png) top no-repeat;
 	margin: 2.5rem auto;
 	background-size: contain;
-	border: 1px solid red;
+/*	border: 1px solid red;*/
+}
+
+/* --------------------------- */
+/* MOCKUP CONTAINER - FA FA-ICON STYLES */
+/* --------------------------- */
+
+.fa-chevron-left {
+	position: absolute;
+	top: 40%;
+	left: -36px;
+	color: #f07710;
+}
+
+.fa-chevron-right {
+	position: absolute;
+	top: 40%;
+	left: 352px;
+	color: #f07710;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+	color: #f40c0c;
+}
+
+/* --------------------------- */
+/* MOCKUP CONTAINER - DESIGN STYLES */
+/* --------------------------- */
+
+
+.mockup-background-color {
+	position: absolute;
+	top: 85px;
+	left: 80px;
+	height: 350px;
+	width: 200px;
 }
 
 .mockup-header-h1 {
@@ -481,7 +526,7 @@ ul, menu, dir {
 	left: 90px;
 }
 
-.mockup-header-h2 {
+.mockup-subheader {
 	position: absolute;
 	background-color: transparent;
 	color: #fff;
@@ -489,11 +534,87 @@ ul, menu, dir {
 /*	(2.25rem * .625) = 1.40625rem  */
 	text-align: center;
 	border: none;
-	height: 2.5rem; 
+	height: 2.25rem; 
 	font-size: 1.40625rem;
-	top: 160px;
+	top: 170px;
 	left: 110px;
 }
+
+.mockup-paragraph {
+	position: absolute;
+	background-color: transparent;
+	color: #fff;
+	width: 160px;
+/*	(1.25rem * .625) = .78125rem  */
+	text-align: justify;
+	border: none;
+	height: auto; 
+	font-size: .78125rem;
+	top: 220px;
+	left: 100px;
+}
+
+.mockup-button {
+	position: absolute;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: .5625rem;
+	color: #fff;
+	width: 160px;
+/*	(.9rem * .625) = .5625rem  */
+	padding: 6px 0px;
+	border: 1px solid #fff;
+	height: auto; 
+	top: 360px;
+	left: 100px;
+}
+
+.mockup-link {
+	position: absolute;
+	text-transform: capitalize;
+	font-size: .5625rem;
+	color: #fff;
+	width: 160px;
+/*	(.9rem * .625) = .5625rem  */
+	padding: 6px 0px;
+	height: auto; 
+	margin-top: 8px;
+	text-align: center;
+	top: 380px;
+	left: 100px;
+}
+
+/* --------------------------- */
+/* MOCKUP BACKGROUND-COLOR STYLES */
+/* --------------------------- */
+
+.background-color-selector {
+	background: linear-gradient(rgba(39, 39, 39, 0.74), rgba(78, 44, 44, 0.3));
+}
+
+.background-color {
+	height: 60px;
+	margin: 8px;
+	border: 1px solid #000;
+}
+
+.background-color:hover {
+	background-color: red;
+}
+
+.background-color h2 {
+	text-align: center;
+	line-height: 3.75rem;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
 
 
 
