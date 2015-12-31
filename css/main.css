@@ -14,13 +14,11 @@ html, body, section {
 
 .container {
 	height: 100%;
+	width: 960px;
+	margin: 0 auto;
 }
 
-.main {
-	height: 800px;
-}
-
-ul, li {
+ul, li, a {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -46,16 +44,14 @@ ul, menu, dir {
 /* --------------------------- */
 
 .navbar {
-	height: 80px;
-	width: 960px;
-	margin: 0 auto;
+	height: 40px;
 	text-align: center;
 }
 
 .navbar h1 {
-	font-size: 3em;
+	font-size: 1.75em;
 	line-height: 1.5em;
-	text-transform: capitalize;
+	font-variant: small-caps
 }
 
 /* --------------------------- */
@@ -65,9 +61,7 @@ ul, menu, dir {
 .header {
 	display: block;
 	height: 460px;
-	width: 960px;
-	margin: 0 auto;
-	background-color: #3f514b;
+/*	background-color: #3f514b;*/
 }
 
 
@@ -169,7 +163,7 @@ ul, menu, dir {
 	box-sizing: border-box;
 	vertical-align: top;
 	width: 35%;
-	height: 80px;
+	height: 100px;
 	padding-left: 1.5rem;
 }
 
@@ -187,7 +181,7 @@ ul, menu, dir {
 	background-color: transparent;
 	font-size: .9rem;
 	color: #f07710;
-	border: 1px solid #000;
+	border: 1px solid #f07710;
 }
 
 .typography button:hover {
@@ -202,10 +196,9 @@ ul, menu, dir {
 	display: inline-block;
 	box-sizing: border-box;
 	text-align: center;
-	padding-left: 1.5rem;
 	width: 65%;
 	height: 100px;
-	background-color: #2a1815;
+/*	background-color: #2a1815;*/
 }
 
 .api-input h2 {
@@ -228,12 +221,204 @@ ul, menu, dir {
 	background-color: transparent;
 	color: #f07710;
 	font-size: .9rem;
-	border: 1px solid #000;
+	border: 1px solid #f07710;
 }
 
 .api-input .button-reset {
 	border-color: #f40c0c;
 }
+
+/* --------------------------- */
+/*    MAIN SECTION      */
+/* --------------------------- */
+
+.main {
+	height: 800px;
+	width: inherit;
+	background-color: azure;
+	margin: 0 auto;
+}
+
+.main::before {
+	content: "";
+	display: block;
+	height: 1px;
+	border-bottom: 1px solid #69a325;
+}
+
+/* --------------------------- */
+/*    PRESENTATION SECTION      */
+/* --------------------------- */
+
+.presentation-style {
+	height: 800px;
+	width: 50%;
+	padding: 20px;
+}
+
+.presentation-style > h2 {
+	height: auto;
+	font-size: 1.25rem;
+	border-bottom: 1px solid #000;
+	margin-bottom: 18px;
+	font-variant: small-caps;
+}
+
+/* --------------------------- */
+/* PRESENTATION - HEADER SECTION */
+/* --------------------------- */
+
+.header-style {
+	display: block;
+	width: 100%;
+	height: 65px;
+	margin-bottom: 1rem;
+}
+
+.header-style input {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 16.25%;
+	height: 65px;
+	text-align: center;
+	font-size: 3rem;
+	border: 1px solid #000;
+}
+
+.header-style h1 {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 80%;
+	padding-left: 1rem;
+	font-size: 3rem;
+}
+
+/* --------------------------- */
+/* PRESENTATION - SUBHEADER SECTION */
+/* --------------------------- */
+
+.subheader-style {
+	display: block;
+	width: 100%;
+	height: 65px;
+	margin-bottom: 1rem;
+}
+
+.subheader-style input {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 16.25%;
+	height: 65px;
+	text-align: center;
+	font-size: 2.25rem;
+	border: 1px solid #000;
+}
+
+.subheader-style h2 {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 80%;
+	padding-left: 1rem;
+	font-size: 2.25rem;
+}
+
+/* --------------------------- */
+/* PRESENTATION - PARAGRAPH SECTION */
+/* --------------------------- */
+
+.paragraph-style {
+	display: block;
+	width: 100%;
+	height: 190px;
+	margin-bottom: 1rem;
+}
+
+.paragraph-style input {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	transform: translateY(100%);
+	width: 16.25%;
+	height: 65px;
+	text-align: center;
+	font-size: 1.25rem;
+	border: 1px solid #000;
+}
+
+.paragraph-style p {
+	display: inline-block;
+	width: 80%;
+	padding-left: 1rem;
+	font-size: 1.25rem;
+}
+
+.paragraph-style p span {
+	font-variant: small-caps;
+	font-weight: 700;
+}
+
+/* --------------------------- */
+/* PRESENTATION - BUTTON SECTION */
+/* --------------------------- */
+
+.button-style {
+	display: block;
+	width: 100%;
+}
+
+.button-style h3 {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 16.25%;
+	text-align: center;
+	font-size: 1.25rem;
+	margin-right: .5rem;
+/*	font-variant: small-caps;*/
+}
+
+.button-style h3:nth-of-type(2),
+.button-style h3:nth-of-type(4) {
+	margin-left: .5rem;
+}
+
+.default-state {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 12px;
+	padding: 4px 4px;
+	width: 30%;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+/* --------------------------- */
+/* PRESENTATION - LINKS SECTION */
+/* --------------------------- */
+
+.links-style {
+	display: block;
+	width: 100%;
+}
+
+.links-style h3 {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 8px;
+	font-size: 1.25rem;
+/*	font-variant: small-caps;*/
+}
+
+.links-style a {
+	margin-left: 1rem;
+}
+
+
+
+
+
+
 
 
 
