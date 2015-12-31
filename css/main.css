@@ -63,7 +63,8 @@ ul, menu, dir {
 /* --------------------------- */
 
 .header {
-	height: 440px;
+	display: block;
+	height: 460px;
 	width: 960px;
 	margin: 0 auto;
 	background-color: #3f514b;
@@ -76,16 +77,18 @@ ul, menu, dir {
 
 .color-selected {
 	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
 	height: 22.5rem;
 	width: 35%;
-	float: left;
+	margin: 0;
+	padding: 2.75rem 1rem;
 	background-color: azure;
 }
 
 .color-selected ul {
 	transform: rotate(-90deg);
 	width: 18.75rem;
-	margin: 2rem auto;
 }
 
 .color-selected ul > li {
@@ -123,13 +126,14 @@ ul, menu, dir {
 
 .color-choices {
 	display: inline-block;
+	box-sizing: border-box;
 	height: 360px;
 	width: 65%;
 	background-color: beige;
 }
 
 .color-choices ul {
-	padding-top: 1.15rem;
+	padding-top: 1.75rem;
 }
 
 .color-choices li {
@@ -153,36 +157,35 @@ ul, menu, dir {
 
 .input-container {
 	width: inherit;
-	height: 80px;
+	height: 100px;
 }
 
 /* --------------------------- */
 /*     TYPOGRAPHY INPUT      */
 /* --------------------------- */
 
-.typography {
+.typography-input {
 	display: inline-block;
-	width: 19.5rem;
+	box-sizing: border-box;
+	vertical-align: top;
+	width: 35%;
+	height: 80px;
 	padding-left: 1.5rem;
 }
 
-.typography h2 {
+.typography-input h2 {
+	padding-top: 12px;
 	line-height: 2rem;
 	color: #f07710;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 }
 
-.typography input {
-	height: 24px;
-	width: 11.5rem;
-	margin-right: .5rem;
-}
-
-.typography button {
+.typography-input select {
 	padding: 7px;
-	width: 100px;
+	width: 260px;
 	background-color: transparent;
+	font-size: .9rem;
 	color: #f07710;
 	border: 1px solid #000;
 }
@@ -192,25 +195,45 @@ ul, menu, dir {
 }
 
 /* --------------------------- */
-/*     COLOR INPUT      */
+/*     API INPUT      */
 /* --------------------------- */
 
 .api {
 	display: inline-block;
-	width: 38.75rem;
-	height: 80px;
-	background-color: tomato;
+	box-sizing: border-box;
+	text-align: center;
+	padding-left: 1.5rem;
+	width: 65%;
+	height: 100px;
+	background-color: #2a1815;
 }
 
-.api {
-	display: inline-block;
-	width: 38.75rem;
-	height: 80px;
-	background-color: tomato;
+.api-input h2 {
+	padding-top: 12px;
+	line-height: 2rem;
+	color: #f07710;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
 }
 
+.api-input > input {
+	width: 300px;
+	height: 28px;
+}
 
+.api-input button {
+	padding: 8px;
+	margin-left: 1rem;
+	width: 100px;
+	background-color: transparent;
+	color: #f07710;
+	font-size: .9rem;
+	border: 1px solid #000;
+}
 
+.api-input .button-reset {
+	border-color: #f40c0c;
+}
 
 
 
